@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://rivieramobility.com/</loc>
+        <lastmod>2024-03-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rivieramobility.com/?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rivieramobility.com/?lang=fr"/>
+    </url>
+
+    <!-- Services Pages -->
+    <url>
+        <loc>https://rivieramobility.com/services/airport-transfers/</loc>
+        <lastmod>2024-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rivieramobility.com/services/airport-transfers/?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rivieramobility.com/services/airport-transfers/?lang=fr"/>
+    </url>
+
+    <url>
+        <loc>https://rivieramobility.com/services/special-events/</loc>
+        <lastmod>2024-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rivieramobility.com/services/special-events/?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rivieramobility.com/services/special-events/?lang=fr"/>
+    </url>
+
+    <url>
+        <loc>https://rivieramobility.com/services/excursions/</loc>
+        <lastmod>2024-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rivieramobility.com/services/excursions/?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rivieramobility.com/services/excursions/?lang=fr"/>
+    </url>
+
+    <url>
+        <loc>https://rivieramobility.com/services/medical-transport/</loc>
+        <lastmod>2024-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rivieramobility.com/services/medical-transport/?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rivieramobility.com/services/medical-transport/?lang=fr"/>
+    </url>
+
+</urlset>

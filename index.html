@@ -1,50 +1,384 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RIVIERA MOBILITY - Taxi sur la Côte d'Azur</title>
-    <meta name="description"
-          content="Découvrez RIVIERA MOBILITY, votre service de taxi de luxe sur la Côte d'Azur. Réservation simple pour l'aéroport, transferts privés et tours touristiques à Nice, Monaco et Antibes.">
-    <meta name="keywords"
-          content="Taxi Côte d'Azur, Service de taxi Riviera, Réservation taxi Nice, Taxi aéroport Côte d'Azur, Taxi luxe Monaco, Transfert aéroport Riviera, Taxi rapide Antibes, Chauffeur privé Côte d'Azur, Taxi touristique Côte d'Azur, Transport privé Riviera">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header>
-    <h1>TAXI</h1>
-</header>
-<main>
-    <div class="spacer"></div>
-    <div class="content-box">
-        <section id="about">
-            <h2>Bienvenue chez RIVIERA MOBILITY</h2>
-            <p>Votre compagnie de taxi de confiance sur la Côte d'Azur.</p>
-            <p>Nous offrons un service de taxi de première classe sur la Côte d'Azur.
-                <br/> Nos véhicules electriques garantissant confort et sécurité à nos clients.</p>
-            <p>Transferts aéroport, tours touristiques, déplacements professionnels et bien plus encore.</p>
-            <p class="highlight">Pour toute réservation ou demande, contactez Stéphane au <strong>06 03 72 92
-                11</strong></p>
-            <div class="button-container">
-                <a href="tel:+33603729211" class="call-button">06 03 72 92 11</a>
-            </div>
-            <br/>
-            <br/>
-            <h2>Welcome to RIVIERA MOBILITY</h2>
-            <p>Your trusted taxi company on the French Riviera.</p>
-            <p>We offer first-class taxi service on the French Riviera.
-                <br/> Our electric vehicles ensure comfort and safety for our clients.</p>
-            <p>Airport transfers, sightseeing tours, business trips, and much more.</p>
-            <p class="highlight">For any booking or inquiry, contact Stéphane at <strong>+33 6 03 72 92 11</strong></p>
-            <div class="button-container">
-                <a href="tel:+33603729211" class="call-button">+33 6 03 72 92 11</a>
-            </div>
-        </section>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riviera Mobility - Taxi Conventionné à Villefranche-sur-Mer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <div class="lang-switch">
+    <a href="#" onclick="setLanguage('en')" class="btn btn-link text-white" id="en-switch">EN</a>
+    <span class="text-white">|</span>
+    <a href="#" onclick="setLanguage('fr')" class="btn btn-link text-white" id="fr-switch">FR</a>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/img/rm-logo2.png" alt="Riviera Mobility" class="navbar-logo me-2" />
+        <span>Riviera Mobility</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#services">
+              <span class="en-content">Services</span>
+              <span class="fr-content">Services</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#booking">
+              <span class="en-content">Booking</span>
+              <span class="fr-content">Réservation</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">
+              <span class="en-content">Contact</span>
+              <span class="fr-content">Contact</span></a>
+          </li>
+          <li class="nav-item lang-switch">
+            <a href="#" onclick="setLanguage('en')" class="btn btn-link text-white" id="en-switch">EN</a>
+            <span class="text-white">|</span>
+            <a href="#" onclick="setLanguage('fr')" class="btn btn-link text-white" id="fr-switch">FR</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</main>
-<footer>
-    <p>&copy; 2024 RIVIERA MOBILITY SARL. Tous droits réservés.</p>
-</footer>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero d-flex align-items-center">
+    <div class="container text-center">
+      <img src="assets/img/rm-logo-card.png" alt="Riviera Mobility" class="hero-logo mb-4" />
+
+      <h1 class="display-4 mb-4">
+        <span class="hide-content">Riviera Mobility</span>
+        <span class="hide-content">Riviera Mobility</span>
+      </h1>
+      <p class="lead mb-4">
+        <span class="en-content">Your private drivers on the French Riviera</span>
+        <span class="fr-content">Vos chauffeurs privés sur la Côte d'Azur</span>
+      </p>
+      <a href="#booking" class="btn btn-primary btn-lg">
+        <span class="en-content">Book Now</span>
+        <span class="fr-content">Réserver Maintenant</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Social Links Section -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <div class="social-links d-flex justify-content-center align-items-center gap-5 py-4">
+        <a href="https://www.instagram.com/rivieramobility" target="_blank" class="text-dark d-flex align-items-center">
+          <i class="fab fa-instagram fa-2x me-2"></i>
+          <span>
+            <span class="en-content">Follow us on Instagram</span>
+            <span class="fr-content">Suivez-nous sur Instagram</span>
+          </span>
+        </a>
+        <a href="https://g.page/rivieramobility" target="_blank" class="text-dark d-flex align-items-center">
+          <i class="fab fa-google fa-2x me-2"></i>
+          <span>
+            <span class="en-content">Review us on Google</span>
+            <span class="fr-content">Évaluez-nous sur Google</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">
+        <span class="en-content">Our Services</span>
+        <span class="fr-content">Nos Services</span>
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card service-card h-100" data-service="airport">
+            <div class="card-body text-center">
+              <i class="fas fa-plane fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">
+                <span class="en-content">Airport Transfers</span>
+                <span class="fr-content">Transferts Aéroport</span>
+              </h5>
+              <p class="card-text">
+                <span class="en-content">Nice Côte d'Azur and other regional airports</span>
+                <span class="fr-content">Nice Côte d'Azur et autres aéroports de la région</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card service-card h-100" data-service="events">
+            <div class="card-body text-center">
+              <i class="fas fa-glass-cheers fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">
+                <span class="en-content">Special Events</span>
+                <span class="fr-content">Événements Spéciaux</span>
+              </h5>
+              <p class="card-text">
+                <span class="en-content">Weddings, parties, corporate events</span>
+                <span class="fr-content">Mariages, soirées, événements d'entreprise</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card service-card h-100" data-service="excursions">
+            <div class="card-body text-center">
+              <i class="fas fa-route fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">
+                <span class="en-content">Tourist Excursions</span>
+                <span class="fr-content">Excursions Touristiques</span>
+              </h5>
+              <p class="card-text">
+                <span class="en-content">Discover the French Riviera with a private driver</span>
+                <span class="fr-content">Découvrez la Côte d'Azur avec un chauffeur privé</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card service-card h-100" data-service="medical">
+            <div class="card-body text-center">
+              <i class="fas fa-ambulance fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">
+                <span class="en-content">Medical Transport</span>
+                <span class="fr-content">Transport Médical</span>
+              </h5>
+              <p class="card-text">
+                <span class="en-content">CPAM-approved medical transport service</span>
+                <span class="fr-content">Transport médical conventionné CPAM</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">
+        <span class="en-content">Booking</span>
+        <span class="fr-content">Réservation</span>
+      </h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form action="mailto:booking@rivieramobility.com" method="post" enctype="text/plain"
+            onsubmit="return formatEmail(this);">
+            <div class="row g-3">
+              <!-- Name Field -->
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="text" name="name" class="form-control" id="nameInput" required />
+                  <label for="nameInput">
+                    <span class="en-content">Name</span>
+                    <span class="fr-content">Nom</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Email Field -->
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="email" name="email" class="form-control" id="emailInput" />
+                  <label for="emailInput">
+                    <span class="en-content">Email</span>
+                    <span class="fr-content">Email</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- WhatsApp Field -->
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <div class="input-group">
+                    <div class="form-floating flex-grow-1">
+                      <input type="tel" name="whatsapp" class="form-control" id="whatsappInput" />
+                      <label for="whatsappInput">
+                        <span class="en-content">Phone</span>
+                        <span class="fr-content">Téléphone</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Service Selection -->
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <select name="service" class="form-select" id="serviceSelect" required>
+                    <option value="" selected disabled></option>
+                    <option value="airport">
+                      <span class="en-content">Airport Transfer</span>
+                      <span class="fr-content">Transfert Aéroport</span>
+                    </option>
+                    <option value="events">
+                      <span class="en-content">Special Events</span>
+                      <span class="fr-content">Événements Spéciaux</span>
+                    </option>
+                    <option value="excursions">
+                      <span class="en-content">Tourist Excursions</span>
+                      <span class="fr-content">Excursions Touristiques</span>
+                    </option>
+                    <option value="medical">
+                      <span class="en-content">Medical Transport</span>
+                      <span class="fr-content">Transport Médical</span>
+                    </option>
+                  </select>
+                  <label for="serviceSelect">
+                    <span class="en-content">Service Requested</span>
+                    <span class="fr-content">Service Demandé</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Message Field -->
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea name="message" class="form-control" id="messageInput" style="height: 100px"
+                    required></textarea>
+                  <label for="messageInput">
+                    <span class="en-content">Message</span>
+                    <span class="fr-content">Message</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  <span class="en-content">Send Request</span>
+                  <span class="fr-content">Envoyer la Demande</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="mb-5">
+            <span class="en-content">Contact Us</span>
+            <span class="fr-content">Contactez-nous</span>
+          </h2>
+
+          <div class="contact-info d-flex justify-content-center gap-5 flex-wrap">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/33603729211" class="contact-card text-center" target="_blank">
+              <div class="icon-wrapper mb-3">
+                <img src="assets/img/whatsapp.png" alt="WhatsApp" class="contact-icon" />
+              </div>
+              <span>+33 6 03 72 92 11</span>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:contact@rivieramobility.com" class="contact-card text-center">
+              <div class="icon-wrapper mb-3">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <span>contact@rivieramobility.com</span>
+            </a>
+
+            <!-- Address -->
+            <a href="https://maps.app.goo.gl/ZtZyrScvmr358aDs5" target="_blank" class="contact-card text-center">
+              <div class="icon-wrapper mb-3">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <span>Villefranche-sur-Mer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Riviera Mobility. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+
+    function setLanguage(lang) {
+      document.documentElement.lang = lang;
+      updateServiceOptions();
+    }
+
+    function formatEmail(form) {
+      const formData = new FormData(form);
+      const subject = document.documentElement.lang === 'fr' ? 'Nouvelle Demande de Réservation' : 'New Booking Request';
+      const body = Array.from(formData.entries())
+        .map(([key, value]) => `${key}: ${value}`)
+        .join('\n');
+
+      window.location.href = `mailto:booking@rivieramobility.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      return false;
+    }
+
+    // Update the service select options when language changes
+    function updateServiceOptions() {
+      const lang = document.documentElement.lang;
+      const select = document.getElementById('serviceSelect');
+      const options = {
+        airport: { en: 'Airport Transfer', fr: 'Transfert Aéroport' },
+        events: { en: 'Special Events', fr: 'Événements Spéciaux' },
+        excursions: { en: 'Tourist Excursions', fr: 'Excursions Touristiques' },
+        medical: { en: 'Medical Transport', fr: 'Transport Médical' }
+      };
+
+      select.options[0].text = lang === 'fr' ? '...' : '...';
+
+      Object.entries(options).forEach(([value, texts], index) => {
+        select.options[index + 1].text = texts[lang];
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const service = urlParams.get('service');
+
+      if (service) {
+        document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach(card => {
+          if (card.dataset.service === service) {
+            card.classList.add('highlighted');
+            setTimeout(() => card.classList.remove('highlighted'), 2000);
+          }
+        });
+      }
+      setLanguage('en');
+      updateServiceOptions();
+    });
+  </script>
+
+
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

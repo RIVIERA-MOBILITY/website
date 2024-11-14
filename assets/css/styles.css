@@ -1,0 +1,222 @@
+:root {
+  --rm-blue: #1CAADE;
+}
+
+.btn-primary {
+  background-color: var(--rm-blue);
+  border-color: var(--rm-blue);
+}
+
+.btn-primary:hover {
+  background-color: #1899c7;
+  border-color: #1899c7;
+}
+
+.text-primary {
+  color: var(--rm-blue) !important;
+}
+
+.bg-primary {
+  background-color: var(--rm-blue) !important;
+}
+
+/* Update any other elements using the blue color */
+.service-card i {
+  color: var(--rm-blue);
+}
+
+a {
+  color: var(--rm-blue);
+}
+
+a:hover {
+  color: #1899c7;
+}
+
+.form-control:focus {
+  border-color: var(--rm-blue);
+  box-shadow: 0 0 0 0.25rem rgba(28, 170, 222, 0.25);
+}
+
+.hero {
+  background-color: white;
+  height: 80vh;
+  padding-top: 76px;
+  /* Adjust based on your navbar height */
+}
+
+.hero-logo {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-logo {
+    max-width: 300px;
+  }
+}
+
+.service-card {
+  transition: all 0.3s ease;
+}
+
+.service-card.highlighted {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(28, 170, 222, 0.5);
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.lang-switch .btn-link {
+  text-decoration: none;
+  padding: 0 5px;
+  opacity: 0.7;
+}
+
+.lang-switch .btn-link:hover {
+  text-decoration: underline;
+}
+
+.lang-switch .btn-link.active {
+  opacity: 1;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.en-content {
+  display: none;
+}
+
+.fr-content {
+  display: none;
+}
+
+/* When the lang attribute is set to 'en', show the English content */
+html[lang="en"] .en-content {
+  display: inline;
+}
+
+html[lang="en"] .fr-content {
+  display: none;
+}
+
+
+/* When the lang attribute is set to 'fr', show the French content */
+html[lang="fr"] .en-content {
+  display: none;
+}
+
+html[lang="fr"] .fr-content {
+  display: inline;
+}
+
+.hide-content {
+  display: none;
+}
+
+.social-links a {
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-2px);
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 30px;
+  }
+}
+
+.whatsapp-icon {
+  height: 24px;
+  width: auto;
+}
+
+.contact-icon {
+  height: 24px;
+  width: auto;
+}
+
+.contact-link {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.contact-link:hover {
+  opacity: 0.7;
+  color: inherit;
+}
+
+.contact-info i {
+  width: 24px;
+  text-align: center;
+}
+
+.input-group .form-floating {
+  flex-grow: 1;
+}
+
+.input-group-text {
+  background-color: #25D366;
+  /* WhatsApp brand color */
+  border-color: #25D366;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    gap: 1rem !important;
+  }
+}
+
+.contact-card {
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  padding: 2rem;
+  min-width: 250px;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  color: inherit;
+}
+
+.icon-wrapper {
+  font-size: 2.5rem;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon {
+  height: 50px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    gap: 2rem !important;
+  }
+
+  .contact-card {
+    padding: 1rem;
+  }
+
+}

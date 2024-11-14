@@ -1,0 +1,21 @@
+# www.robotstxt.org/
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+Allow: /services/
+Allow: /contact/
+Allow: /assets/img/
+Allow: /assets/css/
+
+# Disallow potential sensitive areas
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Crawl-delay for all bots (in seconds)
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://rivieramobility.com/sitemap.xml
